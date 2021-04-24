@@ -1,0 +1,155 @@
+
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+.col-bg
+{
+    background-color: #6ccddf;
+    color : #fff;
+    padding: 0.5em;
+}
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 980px;
+}
+.colums
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0.5em;
+}
+
+@media (max-width : 600px) {
+    .colums{
+        flex-direction: column;
+    }
+   
+}
+.col-1
+{
+    /* reduce width % by 5% because we want to give space between in all the col-1, col-2,col-3 */
+    width: 20%;
+}
+.col-2
+{
+    width: 45%;
+}
+.col-3
+{   
+    width: 70%;
+}
+
+@media (max-width : 600px) {
+    .col-1,.col-2,.col-3{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    background-color:#f8f8f8;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2em 0.75em;
+    
+}
+header h1{
+    font-family: 'Lora' , serif;
+    color: #143774;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-weight: 700;
+    color: #1792d1;
+    margin: 0;
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5em;
+
+    
+}
+nav li{
+    margin: 0 1em;
+}   
+
+nav a{
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+}
+
+nav a:hover{
+    color: #1792d2;
+    
+    
+}
+
+.current-page
+{
+    border-bottom: 1px solid #707070;
+}
+.current-page:hover{
+    color: #707070;
+}
+
+
+.container-nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 675px)
+{
+    .container-nav{
+        flex-direction: column;
+    }
+    header
+    {
+        text-align: center; 
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding-top: 0.5em;
+    }
+    nav li
+    {
+        margin: 0.5em 0; 
+    }
+  
+}
